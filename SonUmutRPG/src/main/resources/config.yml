@@ -1,0 +1,86 @@
+# SonUmutRPG ana ayar dosyası
+# Modülleri buradan kapatabilirsin. /sonumut modul <id> ac|kapat ile de değiştirilir.
+modules:
+  rpg: true
+  moblevel: true
+  loot: true
+  forge: true
+  crate: true
+  quest: true
+  boss: true
+  party: true
+  clan: true
+  trade: true
+  megaphone: true
+  hud: true
+  chat: true
+
+rpg:
+  max-level: 100
+  xp-base: 100          # seviye için gereken XP = xp-base + seviye^2 * xp-curve
+  xp-curve: 25
+  hp-per-level: 0.5     # her seviye için ekstra maksimum can
+  damage-per-level: 0.01 # her seviye için %1 ekstra hasar
+  mana-base: 50
+  mana-per-level: 3
+  points-per-level: 1
+  class-menu-on-join: true
+
+moblevel:
+  radius: 80            # mobun çevresinde oyuncu aranacak yarıçap
+  spread: 2             # seviyeye eklenen rastgele sapma (+-)
+  health-per-level: 0.10
+  damage-per-level: 0.04
+  max-level: 100
+  xp-base: 6
+  xp-per-level: 2
+  gold-per-level: 0.5
+  show-health: true
+
+forge:
+  max-level: 10
+  chances: [100, 90, 80, 70, 55, 40, 30, 20, 12, 6]   # +1 ... +10 başarı şansı (%)
+  cost-base: 100        # maliyet = cost-base * hedef^2
+  fail-drop-from: 6     # hedef seviye bundan büyükse başarısızlıkta -1 olur
+  weapon-bonus: 0.04    # her + için silah hasarı çarpanı
+  armor-bonus: 0.015    # her + için zırh hasar azaltma
+
+crate:
+  broadcast-from: ESSIZ
+
+quest:
+  max-active: 5
+  repeat-hours: 24
+
+boss:
+  bar-radius: 40
+  slam-ticks: 160
+  slam-radius: 5
+
+party:
+  max-size: 5
+  share-radius: 50
+  friendly-fire: false
+  invite-seconds: 60
+
+clan:
+  create-cost: 5000
+  max-members: 20
+  tag-min: 2
+  tag-max: 4
+  friendly-fire: false
+  invite-seconds: 60
+
+trade:
+  request-seconds: 30
+  max-distance: 0       # 0 = sınırsız
+
+megaphone:
+  cooldown-seconds: 30
+  price: 500
+  max-length: 100
+
+hud:
+  sidebar: true
+  tab: true
+  actionbar: true

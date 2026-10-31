@@ -1,0 +1,78 @@
+name: SonUmutRPG
+version: '${project.version}'
+main: tr.sonumut.SonUmutPlugin
+api-version: '1.21'
+author: SonUmut
+description: Tek jar, modüler Türkçe RPG eklentisi
+commands:
+  sonumut:
+    description: SonUmutRPG yönetim komutu
+    aliases: [sr]
+  sinif:
+    description: Sınıf seçimi ve profil
+  profil:
+    description: Profil ve yetenek puanları
+  gorev:
+    description: Görev listesi
+  demirci:
+    description: Eşya geliştirme
+    aliases: [dovme]
+  takas:
+    description: Oyuncu takası
+  parti:
+    description: Parti komutları
+  p:
+    description: Parti sohbeti
+  klan:
+    description: Klan komutları
+  kc:
+    description: Klan sohbeti
+  megafon:
+    description: Megafon
+permissions:
+  sonumut.admin:
+    description: Tüm yönetici yetkileri
+    default: op
+    children:
+      sonumut.rpg.admin: true
+      sonumut.moblevel.admin: true
+      sonumut.forge.admin: true
+      sonumut.loot.admin: true
+      sonumut.crate.admin: true
+      sonumut.quest.admin: true
+      sonumut.boss.admin: true
+      sonumut.trade.admin: true
+      sonumut.megaphone.admin: true
+      sonumut.party.admin: true
+      sonumut.clan.admin: true
+      sonumut.hud.admin: true
+      sonumut.chat.admin: true
+  sonumut.rpg.admin:
+    default: false
+  sonumut.moblevel.admin:
+    default: false
+  sonumut.forge.admin:
+    default: false
+  sonumut.loot.admin:
+    default: false
+  sonumut.crate.admin:
+    default: false
+  sonumut.quest.admin:
+    default: false
+  sonumut.boss.admin:
+    default: false
+  sonumut.trade.admin:
+    default: false
+  sonumut.megaphone.admin:
+    default: false
+  sonumut.party.admin:
+    default: false
+  sonumut.clan.admin:
+    default: false
+  sonumut.hud.admin:
+    default: false
+  sonumut.chat.admin:
+    default: false
+  sonumut.chat.renk:
+    description: Sohbette & renk kodları
+    default: op
